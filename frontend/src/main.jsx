@@ -9,6 +9,7 @@ import { createBrowserRouter,
 } from "react-router-dom";
 
 import Orders from './pages/Orders.jsx';
+import LyricPage from './pages/LyricsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
     element: <Orders/>,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/lyric",
+    element: <LyricPage/>,
+    errorElement: <ErrorPage />,
+  },
+
 
 ]);
 
