@@ -9,6 +9,7 @@ import { createBrowserRouter,
 } from "react-router-dom";
 
 import Orders from './pages/Orders.jsx';
+import SilasPage from './pages/SilasPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
     element: <Orders/>,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/silaspage",
+    element: <SilasPage/>,
+    errorElement: <ErrorPage />,
+  },
+  
 
 ]);
 
